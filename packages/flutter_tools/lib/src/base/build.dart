@@ -180,6 +180,7 @@ class AOTSnapshotter {
         '--snapshot_kind=app-aot-macho-dylib',
         '--macho=$aotSharedLibrary',
         '--macho-object=$relocatableObject',
+        '--macho-reduce-padding',
         '--macho-min-os-version=$minOSVersion',
         '--macho-rpath=@executable_path/Frameworks,@loader_path/Frameworks',
         '--macho-install-name=@rpath/$frameworkName/$frameworkSnapshotName',
